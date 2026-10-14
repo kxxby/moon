@@ -61,6 +61,7 @@ config option or JVM property to bypass it.
 ```powershell
 ./gradlew.bat build
 ./launcher/build.ps1 -Test
+./companion/installer/build.ps1 -Test
 cd companion
 npm test
 npm run test:renderer
@@ -79,7 +80,10 @@ without `-Publish` to inspect the remote repository without changing anything.
 
 The package list is explicit: the remapped production mod JAR, launcher ZIP,
 companion ZIP, three optional resource packs, install notes, licenses and SHA-256
-checksums. Sources JARs, test mods, imported server plugins, personal settings,
+checksums. The Windows Companion setup EXE bundles a checksum-verified Node.js
+runtime and preserves user settings when upgrading. Its matching Node license
+and third-party notices are installed with the application. Sources JARs,
+test mods, imported server plugins, personal settings,
 development logs and backups are excluded. Do not manually upload everything in
 `build/libs`.
 
