@@ -15,8 +15,11 @@ The optional Windows launcher installs the included Moon/Fabric API JARs into a
 separate Prism Launcher instance. Minecraft, Prism and an authenticated account
 are separate requirements. The launcher executable is unsigned.
 
-The optional Companion app requires Node.js 22+ and an installed Edge or Chrome.
-Extract its ZIP and run `start.bat`, then enable **Companion App** in Moon Client.
+For the optional Companion app on Windows, run **MoonCompanion-Setup-2.1.0.exe**
+from the release. It bundles Node.js and adds desktop/Start Menu shortcuts.
+It requires 64-bit Windows 10/11, .NET Framework 4.8 and Edge or Chrome.
+The portable Companion ZIP requires Node.js 22+; extract it and run `start.bat`.
+Enable **Companion App** in Moon Client to connect.
 Optional resource-pack ZIPs can be installed in Minecraft's `resourcepacks` folder.
 
 ## Online availability
