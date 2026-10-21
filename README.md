@@ -7,16 +7,20 @@ actions; check your server's rules before enabling those features.
 ## Install
 
 1. Install Minecraft 1.21.11 with Fabric Loader 0.19.0 or newer and Java 21+.
-2. Download `moonclient-1.0.1.jar` from [Releases](https://github.com/kxxby/moon/releases/latest).
+2. Download `moonclient-1.0.2.jar` from [Releases](https://github.com/kxxby/moon/releases/latest).
 3. Put the JAR and **Fabric API for Minecraft 1.21.11** in that instance's `mods` folder.
 4. Launch Minecraft and press **Right Shift** to open Moon Client.
+
+Optional launcher, Companion and resource-pack downloads are available in
+[release 1.0.1](https://github.com/kxxby/moon/releases/tag/v1.0.1). Install the latest
+Moon JAR above after using the older launcher bundle.
 
 The optional Windows launcher installs the included Moon/Fabric API JARs into a
 separate Prism Launcher instance. Minecraft, Prism and an authenticated account
 are separate requirements. The launcher executable is unsigned.
 
 For the optional Companion app on Windows, run **MoonCompanion-Setup-2.1.0.exe**
-from the release. It bundles Node.js and adds desktop/Start Menu shortcuts.
+from release 1.0.1. It bundles Node.js and adds desktop/Start Menu shortcuts.
 It requires 64-bit Windows 10/11, .NET Framework 4.8 and Edge or Chrome.
 The portable Companion ZIP requires Node.js 22+; extract it and run `start.bat`.
 Enable **Companion App** in Moon Client to connect.
