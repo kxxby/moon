@@ -6,7 +6,7 @@ const material=await crypto.subtle.importKey('raw',new TextEncoder().encode(docu
 const raw=await crypto.subtle.deriveBits({name:'PBKDF2',salt:bytes(envelope.salt),iterations:600000,hash:'SHA-256'},material,256);
 const key=await crypto.subtle.importKey('raw',raw,'AES-GCM',false,['decrypt']);const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes(envelope.iv),additionalData:new TextEncoder().encode('moon-vault-v1:app')},key,bytes(envelope.ciphertext));
 const app=JSON.parse(new TextDecoder().decode(plain));const rawText=btoa(String.fromCharCode(...new Uint8Array(raw)));
-const html=app.html.replace('<!--MOON_UNLOCK_BOOTSTRAP-->', '<script>('+app.bootstrap+')('+JSON.stringify(rawText)+','+JSON.stringify(app.odds).replace(/</g,'\u003c')+','+JSON.stringify(app.feedUrl)+');<\/script>');
+const html=app.html.replace('<!--MOON_UNLOCK_BOOTSTRAP-->', '<script>('+app.bootstrap+')('+JSON.stringify(rawText)+','+JSON.stringify(app.odds).replace(/</g,'\u003c')+','+JSON.stringify(app.feedUrl)+','+JSON.stringify(app.purchaseFeedUrl||null)+');<\/script>');
 document.getElementById('password').value='';document.open();document.write(html);document.close();
 }catch{document.getElementById('error').textContent='Unable to unlock. Check your password and connection.';button.disabled=false;}};
 </script></body></html>
