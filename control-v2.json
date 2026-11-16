@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "enabled": true,
+  "message": "Moon Client is temporarily unavailable. Please check back later.",
+  "minimumVersion": "1.1.0",
+  "blockedVersions": [],
+  "updateMessage": "This Moon Client release is no longer available. Please install Moon Client: Infusion 1.1.0 or a newer supported release."
+}
