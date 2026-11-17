@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "enabled": true,
+  "message": "Infused Auto Bidder is temporarily unavailable. Please check back later.",
+  "minimumVersion": "1.0.0",
+  "blockedVersions": [],
+  "updateMessage": "This Infused Auto Bidder release is no longer available. Please install a supported release."
+}
