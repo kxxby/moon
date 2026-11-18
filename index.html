@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e0d">
+  <meta name="description" content="Meet Moon Client. Expressive skies, a personal HUD, and thoughtful tools for your Minecraft world. Explore the experience.">
+  <title>Moon Client — Your world, in a new light.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/inter-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/neon.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Moon Client home"><span class="moon-mark" aria-hidden="true"></span>moon<span class="brand-client">CLIENT</span></a>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#visuals">Visuals</a><a href="#your-moon">Your Moon</a></nav>
+    <a class="header-cta" href="#explore">Take a look <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden><a href="#experience">Experience</a><a href="#visuals">Visuals</a><a href="#your-moon">Your Moon</a><a href="#explore">Take a look ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-landscape" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="star-field" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content wrap">
+        <div class="eyebrow hero-enter"><span class="status-dot"></span> A NEW PERSPECTIVE ON MINECRAFT</div>
+        <h1 id="hero-title" class="hero-enter">Your world.<br>In a <em>new light.</em></h1>
+        <p class="hero-enter">The places you know. A feeling you don’t.<br>Make every session a little more yours with Moon.</p>
+        <a class="button primary hero-enter" href="#experience">Explore Moon <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-bottom wrap"><a href="#experience" class="scroll-cue"><span>↓</span> SCROLL TO DISCOVER</a><span class="capture-note"><span class="tiny-cross">+</span> CAPTURED IN MOON CLIENT <span class="capture-tag">01 / NEON SKY</span></span></div>
+      <div class="hero-coordinate" aria-hidden="true">THE WORLD IS STILL YOURS. &nbsp; LOOK CLOSER.</div>
+    </section>
+    <div class="feature-strip" aria-label="Moon Client features"><div><span>MADE FOR MINECRAFT</span><i>✳</i><span>BUILT AROUND YOU</span><i>✳</i><span>A DIFFERENT ATMOSPHERE</span><i>✳</i><span>EVERY DETAIL, YOURS</span><i>✳</i></div></div>
+
+    <section id="experience" class="experience wrap section-pad">
+      <div class="section-heading reveal"><p class="eyebrow"><span class="section-number">01 /</span> THE EXPERIENCE</p><h2>Same blocks.<br><span class="muted">Different feeling.</span></h2><p class="section-description">Moon brings a personal touch to Minecraft. From the sky above you to the smallest detail on your HUD, shape a world that feels like your own.</p></div>
+      <div class="experience-grid">
+        <a class="world-card reveal" href="#visuals"><img src="assets/aurora.jpg" alt="Luminous turquoise aurora flowing through a starry sky in Moon Client" width="854" height="480" loading="lazy"><div class="image-shade"></div><span class="image-label">A CHANGE OF ATMOSPHERE</span><div class="world-card-caption"><h3>A sky worth<br>looking up for.</h3><span class="circle-arrow" aria-hidden="true">↗</span></div></a>
+        <div class="feature-list">
+          <article class="feature-row reveal"><span class="feature-icon" aria-hidden="true">✳</span><div><h3>Set the atmosphere.</h3><p>Expressive skies, ambient effects, and cosmetics that make the familiar feel new.</p></div><span class="row-number">01</span></article>
+          <article class="feature-row reveal"><span class="feature-icon crosshair-icon" aria-hidden="true">⌖</span><div><h3>Keep your focus.</h3><p>Combat indicators and fight stats put the details you care about within sight.</p></div><span class="row-number">02</span></article>
+          <article class="feature-row reveal"><span class="feature-icon" aria-hidden="true">⊞</span><div><h3>Make room for your style.</h3><p>Arrange your HUD, customize your interface, and save a setup that feels right.</p></div><span class="row-number">03</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visuals" class="visuals section-pad">
+      <div class="wrap"><div class="visual-heading reveal"><div><p class="eyebrow"><span class="section-number">02 /</span> A DIFFERENT ATMOSPHERE</p><h2>Find your<br><em>after hours.</em></h2></div><p class="section-description">One world. More ways to see it.<br>Explore a few of Moon’s in-game skies.</p></div>
+      <div class="scene-tabs reveal" role="tablist" aria-label="Choose a sky"><button id="tab-neon" role="tab" aria-selected="true" aria-controls="scene-panel" data-scene="neon"><span class="swatch neon-swatch"></span>Neon dusk<span class="tab-index">01</span></button><button id="tab-aurora" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="aurora"><span class="swatch aurora-swatch"></span>Aurora<span class="tab-index">02</span></button><button id="tab-nebula" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="nebula"><span class="swatch nebula-swatch"></span>Nebula<span class="tab-index">03</span></button></div>
+      <div id="scene-panel" class="scene-frame reveal" role="tabpanel" aria-labelledby="tab-neon" tabindex="0"><img id="scene-image" src="assets/neon.jpg" alt="A pink striped sun sets over a Minecraft valley beneath a purple neon sky" width="854" height="480" loading="lazy"><div class="scene-vignette"></div><span class="scene-kicker">MOON / WORLD VISUALS</span><button class="expand-button" aria-label="Expand current gameplay screenshot">↗</button><div class="scene-caption"><div><span id="scene-count">01 — 03</span><h3 id="scene-title">Stay for the sunset.</h3></div><p id="scene-description">A neon horizon. A familiar world.<br>A whole different mood.</p></div></div>
+      <div class="scene-footnote"><span><span class="status-dot"></span> REAL IN-GAME CAPTURES</span><span>YOUR NEXT FAVORITE VIEW IS OUT THERE.</span></div></div>
+    </section>
+
+    <section id="your-moon" class="customize wrap section-pad">
+      <div class="customize-copy reveal"><p class="eyebrow"><span class="section-number">03 /</span> PERSONALLY YOURS</p><h2>Your game.<br>Your rhythm.<br><em>Your Moon.</em></h2><p class="section-description">A clean canvas for the way you play. Keep your essentials close, find your color, and let everything else fade into the background.</p><div class="customize-controls"><span class="control-label">TRY AN ACCENT</span><div class="color-options" role="group" aria-label="Preview accent color"><button class="color-option active" data-color="lime" aria-label="Lunar lime" aria-pressed="true" style="--swatch:#d9f99a"></button><button class="color-option" data-color="lilac" aria-label="Soft lilac" aria-pressed="false" style="--swatch:#c3acff"></button><button class="color-option" data-color="ice" aria-label="Glacier blue" aria-pressed="false" style="--swatch:#9ae5f9"></button><button class="color-option" data-color="rose" aria-label="Dusk rose" aria-pressed="false" style="--swatch:#f6afc7"></button></div></div><p class="interaction-note">A little preview. Go ahead, make it yours. <span aria-hidden="true">↗</span></p></div>
+      <div class="customize-stage reveal" data-accent="lime"><div class="stage-glow"></div><div class="interface-demo"><div class="demo-top"><span class="demo-brand"><span class="moon-mark"></span> moon</span><span class="demo-dots">•••</span></div><div class="demo-title"><span>YOUR WORKSPACE</span><h3>Good evening.</h3><p>A little space, just for you.</p></div><div class="demo-welcome"><span class="mini-orbit" aria-hidden="true">☾</span><div>Your Moon. Your setup.<small>Every detail in its right place.</small></div><span aria-hidden="true">↗</span></div><div class="demo-section-label">THE ESSENTIALS <span>3 MODULES</span></div><div class="demo-module"><span class="module-glyph">⌖</span><div>Combat HUD<small>Your fight, at a glance.</small></div><button role="switch" aria-checked="true" aria-label="Preview Combat HUD" data-module="combat"><span></span></button></div><div class="demo-module"><span class="module-glyph">✧</span><div>Custom skies<small>A change of atmosphere.</small></div><button role="switch" aria-checked="true" aria-label="Preview custom skies" data-module="skies"><span></span></button></div><div class="demo-module"><span class="module-glyph">♫</span><div>Music HUD<small>A soundtrack for your session.</small></div><button role="switch" aria-checked="false" aria-label="Preview Music HUD" data-module="music"><span></span></button></div><div class="demo-footer"><span class="status-dot"></span><span id="module-status" aria-live="polite">2 essentials enabled</span><kbd>R SHIFT</kbd></div></div><div class="floating-chip" id="music-chip" hidden><span>♫</span> Music HUD is in your mix.</div><div class="stage-caption"><span>INTERACTIVE INTERFACE CONCEPT</span><span>DESIGNED AROUND YOU ↗</span></div></div>
+    </section>
+
+    <section id="explore" class="details-section section-pad"><div class="wrap details-layout"><div class="reveal"><p class="eyebrow"><span class="section-number">04 /</span> THE SMALL DETAILS</p><h2>A little more<br>to explore.</h2><p class="section-description">The essentials, before your next adventure.</p><a class="text-link" href="#visuals">Back to the views <span>↗</span></a></div><div class="faq-list reveal"><details open><summary>What is Moon Client?<span aria-hidden="true">+</span></summary><p>Moon is a PvP-focused Fabric mod for Minecraft, with combat HUDs, fight stats, visual customization, cosmetics, and a configurable interface. It puts your setup at the center of the experience.</p></details><details><summary>Can I make it my own?<span aria-hidden="true">+</span></summary><p>Yes. Moon includes a HUD editor, interface themes, module settings, and profiles. Choose the information you want to see, arrange it to fit your play style, and give your setup a personal touch.</p></details><details><summary>Are these visuals from the game?<span aria-hidden="true">+</span></summary><p>Yes. The sky and world images on this page were captured in Minecraft running Moon Client. The interactive workspace above is a website concept illustrating customization, rather than a live client session.</p></details><details><summary>Can I download it here?<span aria-hidden="true">+</span></summary><p>Not yet. This is a first look at the Moon experience. Downloads aren’t available on this website.</p></details></div></div></section>
+    <section class="closing wrap reveal"><span class="closing-orbit" aria-hidden="true"><span class="moon-mark"></span></span><p class="eyebrow">SAME WORLD. A NEW PERSPECTIVE.</p><h2>See you under<br>a different sky.</h2><a class="button primary" href="#visuals">Find your atmosphere <span aria-hidden="true">↗</span></a><span class="closing-note">JUST A FIRST LOOK. MORE TO COME.</span></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#" aria-label="Back to top"><span class="moon-mark" aria-hidden="true"></span>moon</a><p>An independent client. Not affiliated with Mojang or Microsoft.</p><a href="#" class="back-top">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
+  <dialog class="lightbox" aria-label="Gameplay screenshot"><button class="lightbox-close" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button><img src="assets/neon.jpg" alt=""><p>CAPTURED IN MINECRAFT WITH MOON CLIENT</p></dialog>
+</body>
+</html>
